@@ -122,6 +122,7 @@ li:last-child {
 border-radius: 4px;
 border: 1px solid #808080;
 padding: 8px 16px;
+outline: transparent;
 }
 
 .feedback-form input:hover,
@@ -133,7 +134,8 @@ border: 1px solid #000000;
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid #808080;
-  margin-bottom: 16px;  
+  margin-bottom: 16px;
+  outline: transparent;  
 }
 
 .feedback-form textarea:hover,
