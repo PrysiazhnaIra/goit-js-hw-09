@@ -6,11 +6,12 @@ const textarea = form.elements.message;
 let formData = { 
     email: "", 
     message: "",
-    reset() {
-        this.email = "";
-        this.message = "";
-    },
 };
+
+function resetFormData(formData) {
+    formData.email = "";
+    formData.message = "";
+}
 
 const localStorageKey = "feedback-form-state";
 
@@ -40,6 +41,6 @@ form.addEventListener("submit", (evt) => {
         console.log(formData);
         localStorage.removeItem(localStorageKey);
         form.reset();
-        formData.reset();
+        resetFormData(formData);
     }
 });
